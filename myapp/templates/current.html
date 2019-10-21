@@ -1,0 +1,60 @@
+<html>
+<head>
+	<style>
+		table, tr, td{
+                border:2px solid;
+            }
+            table{
+                border-collapse: collapse;
+
+                }
+
+
+	</style>
+</head>
+<body>
+	<center>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Mobile_no</td>
+			<td>Course</td>
+			<td>Source</td>
+			<td>Lead_status</td>
+			<td>Demo_Date</td>
+			<td>Counsler</td>
+			<td>Remark</td>
+			<td>Status</td>
+			<td>COMPLETE</td>
+			<td>DELAY</td>
+			<td>DIS</td>
+		</tr>
+		{% for i in details %}
+		<tr>
+			<td>{{i.name}}</td>
+			<td>{{i.Course}}</td>
+			<td>{{i.DOJ}}</td>
+			<td>{{i.DOC}}</td>
+			<td>{{i.Course_fee}}</td>
+			<td>{{i.Instructor}}</td>
+			<td>{{i.Aadhar}}</td>
+			<td>{{i.mobile}}</td>
+			<td>{{i.remark}}</td>
+			<td>{{i.status}}</td>
+			<td><a href = "{% url 'complete' id=i.id %}">Complete</a></td>
+			<td><a href = "{% url 'delay' id=i.id %}">delay</a></td>
+			<td><a href = "{% url 'rejoin' id=i.id %}">stop</a></td>
+
+		</tr>
+		{% endfor %}
+
+
+
+	</table>
+
+
+
+
+</center>
+</body>

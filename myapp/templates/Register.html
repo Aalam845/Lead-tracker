@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<style>
+			
+			#d1{
+				margin-left: 20%;
+			
+			}
+
+		</style>
+		<body>
+			<form method="POST">
+				{% csrf_token %}
+			<div id='d1'>
+			<h1>Resgister</h1>
+			<label>Name:<label>
+				<br>
+			<input style='width:80%;'type='text' name='Name' placeholder="name"><br><br>
+			<label>Last_name:</label>
+			<br>
+			<input style='width:80%;'type='text' name='Last_name' placeholder="Last Name"><br><br>
+			<label>Mobile_no:</label>
+			<br>
+			<input style='width:80%;'type='text' name='Mobile_no' placeholder="Mobile No"><br><br>
+			<label>Email:</label>
+			<br>
+			<input style='width:80%;'type='text' name='Email' placeholder="Enter Email"><br><br>
+			<label>Course:</label>
+			<br>
+			<select style='width:80%;' name="Course">
+			<option>Default</option>
+				<option>Pystack</option>
+				<option>Fullstack</option>
+				<option>Data Science</option>
+				<option>AWS</option>
+				</select><br><br>
+			<label>Source:</label>
+			<br>
+			<select style='width:80%;' name="Source">
+				<option>Default</option>
+				<option>Social Media</option>
+				<option>Website</option>
+				<option>Sulekha</option>
+			</select><br><br>
+			<label>Demo_Date:</label>
+			<br>
+			<input style='width:80%;'type='Date' name='Demo_date' placeholder="DD-MM-YYYY"><br><br>
+			<label>Lead_Status:</label>
+			<br>
+			<input style='width:80%;'type='text' name='Lead_status' placeholder="Default"><br><br>
+			<label>Counsler:</label>
+			<br>
+			<input style='width:80%;'type='text' name='Counsler'placeholder="Enter Counsler Name"><br><br>
+			<label>Remark:</label>
+			<br>
+			<select style='width:80%;' name="Remark">
+				<option>Default</option>
+				<option>Good</option>
+				<option>Very Good</option>
+				<option>Excellent</option>
+			</select><br><br>
+			
+			<input style='width:80%;'type='submit' name='submit'>
+			
+		</div>
+		</form>
+
+
+		</body>
+	</head>
+</html>

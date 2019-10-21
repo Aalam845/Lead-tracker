@@ -1,0 +1,44 @@
+{{details}}<br>
+
+{% for i in details %}
+	{{i.Name}}<br>
+{% endfor %}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table formt</title>
+	<style type="text/css">
+		table, tr, td{
+		border: 2px solid;
+	
+		}
+		td, tr{
+			padding: 8px;
+		}
+
+	table{
+		border-collapse: collapse;
+	}
+	</style>
+
+</head>
+<body>
+	{% for i in details %}
+	<table>
+		<tr>
+			<td>{{i.Name}}</td>
+			<td>{{i.Email}}</td>
+			<td>{{i.Mobile_no}}</td>
+			<td>{{i.Course}}</td>
+			<td>{{i.Source}}</td>
+		</tr>
+	</table>
+	{% endfor %}
+</body>
+</html>
+
+
+

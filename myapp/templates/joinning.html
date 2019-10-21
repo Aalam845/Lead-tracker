@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<style>
+			#id4{
+				margin-left: 20%;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<form method = "POST">
+			{% csrf_token %}
+		<div id="id4">
+			<h1>Joinnings</h1>
+			<label>Name:</label><br>
+			<input style='width:80%;'type='text'name='name'placeholder='name'><br><br>
+			<label>Course:</label><br>
+			<select style='width:80%;' name = "Course">
+				<option>Default</option>
+				<option>Python</option>
+				<option>Fullsatck</option>
+				<option>Data Science</option>
+				<option>Machine Learning</option>
+			</select><br><br>
+			<label>Date of Joinning:</label><br>
+			<input style='width:80%;'type='Date'name='DOJ'placeholder='DD-MM-YYYY'><br><br>
+			<label>Date of Completion:</label><br>
+			<input style='width:80%;'type='Date'name='DOC'placeholder='DD-MM-YYYY'><br><br>
+			<label>Course Fee:</label><br>
+			<input style='width:80%;'type='text'name='Course_fee'placeholder='Enter Course_Fee'><br><br>
+			<label>Instructor:</label><br>
+			<input style='width:80%;'type='text'name='Instructor'placeholder='Enter Instructor'><br><br>
+			<label>Aadhar no:</label><br>
+			<input style='width:80%;'type='text'name='Aadhar'placeholder='Enter no'><br><br>
+			<label>Mobile no:</label><br>
+			<input style='width:80%;'type='text'name='mobile'placeholder='Enter your mobile'><br><br>
+			<label>Email:</label><br>
+			<input style='width:80%;'type='text'name='email'placeholder='Enter Email'><br><br>
+			<label>Remark:</label><br>
+			<select style='width:80%;'name = 'remark'>
+				<option>Default</option>
+				<option>Good</option>
+				<option>Very Good</option>
+				<option>Excellent</option>
+			</select><br><br>
+			<center><button>Find</button></center>
+			
+			
+			
+		</div>
+	</form>
+		</body>
+
+</html>

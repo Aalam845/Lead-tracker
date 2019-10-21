@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<style>
+			#id3{
+				margin-left: 20%;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<form method = "POST" action = "{% url 'Counselling1' %}">
+			{% csrf_token %}
+		<div id="id3">
+	 	<h1>Counselling</h1>
+	 	<label>Demo Date:</label><br>
+	 	<input style='width:80%;'type='Date' name='Demo_date'placeholder="DD-MM-YYYY"><br><br>
+	 	<label>Course:</label>
+			<br>
+			<select style='width:80%;' name="Course">
+			<option>Default</option>
+				<option>Pystack</option>
+				<option>Fullstack</option>
+				<option>Data Science</option>
+				<option>AWS</option>
+				</select><br><br>
+			<center><button>Find</button></center>
+	</div>	
+	</body>
+</html>

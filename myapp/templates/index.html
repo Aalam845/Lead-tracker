@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+	<head>
+		<style>
+			#aalam{
+				/*display:inline;*/
+				width:100%;
+			
+				/*background-color:grey;*/
+				color:white;
+				padding:5px;
+			}
+			li{
+				display: inline-block;
+				margin-left: 30px;
+
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		
+		<div id='aalam'>
+			<ul>
+			<img style='width:100px;height:30px;'src="{% static 'images/dl.png' %}">	
+			<a href="{% url 'Register' %}"><li>Register</li></a>
+			<a href="{% url 'Walkins' %}"><li>Walkins</li></a>
+			<a href="{% url 'Calling' %}"><li>Calling</li></a>
+			<a href="{% url 'Counselling' %}"><li>Counselling</li></a>
+			<a href="{% url 'joinning' %}"><li>Joinning</li></a>
+			<a href="{% url 'students' %}"><li>Students</li></a>
+			<a href="{% url 'current' %}"><li>Current status</li></a>	
+			</ul>
+			<img style='height:80%;width:100%;'src="{% static 'images/dl2.jpg' %}">
+		</div>
+	</body>
+</html>

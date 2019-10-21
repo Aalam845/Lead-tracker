@@ -1,0 +1,58 @@
+<html>
+<head>
+	<style>
+		table, tr, td{
+                border:2px solid;
+            }
+            table{
+                border-collapse: collapse;
+
+                }
+
+
+	</style>
+</head>
+<body>
+	<center>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Mobile_no</td>
+			<td>Course</td>
+			<td>Source</td>
+			<td>Lead_status</td>
+			<td>Demo_Date</td>
+			<td>Counsler</td>
+			<td>Remark</td>
+			<td>join</td>
+			<td>willing</td>
+			<td>Dead</td>
+
+		</tr>
+		{% for i in details %}
+		<tr>
+			<td>{{i.Name}}</td>
+			<td>{{i.Email}}</td>
+			<td>{{i.Mobile_no}}</td>
+			<td>{{i.Course}}</td>
+			<td>{{i.Source}}</td>
+			<td>{{i.Lead_status}}</td>
+			<td>{{i.Demo_date}}</td>
+			<td>{{i.Counsler}}</td>
+			<td>{{i.Remark}}</td>
+			<td><a href = "{% url 'joinning' %}">join</a></td>
+			<td><a href = "{% url 'Willing' i.id %}">willing</a></td>
+			<td><a href = "{% url 'Dead' i.id %}">Dead</a></td>
+		</tr>
+		{% endfor %}
+
+
+
+	</table>
+
+
+
+
+</center>
+</body>

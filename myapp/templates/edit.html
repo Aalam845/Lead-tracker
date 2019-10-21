@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<style>
+			#id3{
+				margin-left: 20%;
+			}
+		</style>
+		
+	</head>
+	<body>
+	<form method="POST">
+		{% csrf_token %}
+		<div id="id3">
+	 	<h1>Counselling</h1>
+	 	<label>Demo Date:</label><br>
+	 	<input style='width:80%;'type='Date' name='Demo_date' value="{{details.Demo_date}}" placeholder="DD-MM-YYYY"><br><br>
+	 	<label>Name:</label><br>
+	 	<input style='width:80%;' type="text" name="Name" value="{{details.Name}}">
+	 	<center><button>Find</button></center>
+	</form>
+	</div>	
+	</body>
+</html>

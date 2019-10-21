@@ -1,0 +1,124 @@
+<html>
+<head>
+	<style>
+		table, tr, td{
+                border:2px solid;
+            }
+            table{
+                border-collapse: collapse;
+
+                }
+
+
+	</style>
+</head>
+<body>
+	<center>
+		<h1>COMPLETE</h1>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Mobile_no</td>
+			<td>Course</td>
+			<td>Source</td>
+			<td>Lead_status</td>
+			<td>Demo_Date</td>
+			<td>Counsler</td>
+			<td>Remark</td>
+			<td>status</td>
+		</tr>
+		{% for i in details1 %}
+		<tr>
+			<td>{{i.name}}</td>
+			<td>{{i.Course}}</td>
+			<td>{{i.DOJ}}</td>
+			<td>{{i.DOC}}</td>
+			<td>{{i.Course_fee}}</td>
+			<td>{{i.Instructor}}</td>
+			<td>{{i.Aadhar}}</td>
+			<td>{{i.mobile}}</td>
+			<td>{{i.remark}}</td>
+			<td>{{i.status}}</td>
+		</tr>
+		{% endfor %}
+
+
+
+	</table>
+
+
+
+
+</center>
+
+
+
+
+	<center>
+		<h1>Discontinue</h1>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Mobile_no</td>
+			<td>Course</td>
+			<td>Source</td>
+			<td>Lead_status</td>
+			<td>Demo_Date</td>
+			<td>Counsler</td>
+			<td>Remark</td>
+			<td>status</td>
+		</tr>
+		{% for i in details2 %}
+		<tr>
+			<td>{{i.name}}</td>
+			<td>{{i.Course}}</td>
+			<td>{{i.DOJ}}</td>
+			<td>{{i.DOC}}</td>
+			<td>{{i.Course_fee}}</td>
+			<td>{{i.Instructor}}</td>
+			<td>{{i.Aadhar}}</td>
+			<td>{{i.mobile}}</td>
+			<td>{{i.remark}}</td>
+			<td>{{i.status}}</td>
+		</tr>
+		{% endfor %}
+</table>
+</center>
+
+
+	<center>
+		<h1>Stoped</h1>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Mobile_no</td>
+			<td>Course</td>
+			<td>Source</td>
+			<td>Lead_status</td>
+			<td>Demo_Date</td>
+			<td>Counsler</td>
+			<td>Remark</td>
+			<td>status</td>
+		</tr>
+		{% for i in details3 %}
+		<tr>
+			<td>{{i.name}}</td>
+			<td>{{i.Course}}</td>
+			<td>{{i.DOJ}}</td>
+			<td>{{i.DOC}}</td>
+			<td>{{i.Course_fee}}</td>
+			<td>{{i.Instructor}}</td>
+			<td>{{i.Aadhar}}</td>
+			<td>{{i.mobile}}</td>
+			<td>{{i.remark}}</td>
+			<td>{{i.status}}</td>
+		</tr>
+		{% endfor %}
+</table>
+</center>
+
+
+</body>
